@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const Main = styled.div`
   display: flex;
-  border: 1px solid black;
+  flex-wrap: wrap;
+  max-width: 70%;
+  
   margin:5px 20px;
+
+  
  
 
 `
@@ -12,7 +16,8 @@ export const Card  = styled.div`
 width: 30vh;
 display: flex;
 flex-direction: column;
-
+padding:5px;
+margin:5px;
 height: 40vh;
 background-color: #FCF7FF;
 border-radius: 20px;

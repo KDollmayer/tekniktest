@@ -8,16 +8,22 @@ export default function ProductCard() {
 
 
   const fetchData = async () => {
-      setProductList(renderProducts())
+    return await renderProducts()
+      
+      
   }
 
   useEffect(()=> {
-    fetchData()
+    fetchData().then(setProductList).catch(()=> {
+      setProductList([])
+    })
   }, [])
   return (
     <s.Main>
+      <>{console.log(productList)}</>
       {productList.map((item) => {
-         <s.Card> 
+        return (
+         <s.Card key={item._id}> 
           <s.H1>{item.name}</s.H1>
           <s.H3>{item.price}</s.H3>
           <s.P>{item.description}</s.P>
@@ -25,7 +31,7 @@ export default function ProductCard() {
           
 
          </s.Card>
-
+        )
       })}
      
 

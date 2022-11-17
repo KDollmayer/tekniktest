@@ -1,13 +1,15 @@
-import React from 'react'
-import axios from 'axios'
-import fetchData from '../components/card/index'
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL;
+import axios from 'axios'
+
+
+
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL
+
 
 export const createProduct = async (name, description, price, weight) => {
       try {
         await axios.post("/products", {name, description, price, weight})
-        fetchData()
+        window.location.reload()
       } catch (error) {
         console.error(error)
         return null
@@ -15,9 +17,14 @@ export const createProduct = async (name, description, price, weight) => {
 }
 
 export const renderProducts = async () => {
+ 
     try {
-        return (await axios.get("/products")).data
+
+        const products = (await axios.get("products")).data
+        
+        return products
     } catch (error) {
         console.error(error)
+        return null
     }
 }
