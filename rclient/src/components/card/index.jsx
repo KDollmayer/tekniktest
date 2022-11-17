@@ -27,7 +27,7 @@ export default function ProductCard() {
           <s.H1>{item.name}</s.H1>
           <s.H3>{item.price}</s.H3>
           <s.P>{item.description}</s.P>
-          <s.H3>{item.weight}</s.H3>
+          <s.PW>{item.weight}</s.PW>
           
 
          </s.Card>
