@@ -1,0 +1,47 @@
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+
+  margin:5px 20px;
+}
+.card{
+  width: 30vh;
+display: flex;
+flex-direction: column;
+padding:5px;
+margin:5px;
+height: 40vh;
+background-color: #FCF7FF;
+border-radius: 20px;
+
+
+}
+
+.card:hover{
+  cursor: pointer;
+
+}
+h1{
+  font-weight: bold;
+color:#000F08;
+text-align: center;
+}
+h3{
+  color:#000F08;
+padding-left:2px;
+text-align: start;
+margin-left:15px;
+}
+p{
+  font-weight: lighter;
+color:#000F08;
+text-align: center;
+}
+
+.pw{
+  color:#000F08;
+padding-left:2px;
+text-align: start;
+margin-left:15px;
+}

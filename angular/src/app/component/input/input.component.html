@@ -1,0 +1,7 @@
+<div class="inputDiv">
+  <input type="text" placeholder="Product Name" required [(ngModel)]="enteredName">
+  <input type="text" placeholder="Price - Sek" required [(ngModel)]="enteredPrice">
+  <input type="text" placeholder="Weight - kg" required [(ngModel)]="enteredWeight">
+  <textarea placeholder="Description" [(ngModel)]="enteredDesc"></textarea>
+  <button (click)="addProduct()">Add Product</button>
+</div>
