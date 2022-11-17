@@ -1,0 +1,10 @@
+.container{
+  display:flex;
+  font-family: 'Noto Sans Mono', monospace;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  padding:0;
+  background-color: #FFFBDB;
+}
