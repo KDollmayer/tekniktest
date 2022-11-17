@@ -21,16 +21,11 @@ margin:5px;
 height: 40vh;
 background-color: #FCF7FF;
 border-radius: 20px;
-
-
-
-
-&:hover{
   &:hover{
     cursor: pointer;
     
   }
-}
+
 `
 export const H1 = styled.h1`
 font-weight: bold;
